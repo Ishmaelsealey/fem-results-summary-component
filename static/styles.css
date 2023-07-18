@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  min-height: 100vh;
+}
+
+#purple {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+  padding: 25px 40px 45px;
+  border-radius: 0 0 2rem 2rem;
+  margin-bottom: 1.5rem;
+}
+#purple .info {
+  color: hsla(0deg, 0%, 100%, 0.5);
+  text-align: center;
+}
+
+#circle {
+  background-image: linear-gradient(hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+#circle p {
+  color: hsla(0deg, 0%, 100%, 0.4);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+h2, h3, strong, button {
+  font-weight: 700;
+}
+
+.result {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  margin-bottom: 20px;
+}
+
+.great {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#summary {
+  padding: 0 30px 30px;
+}
+#summary h3 {
+  margin-bottom: 5px;
+  color: hsl(224deg, 30%, 27%);
+}
+#summary #reaction {
+  color: hsl(0deg, 100%, 67%);
+  background-color: hsla(0deg, 100%, 67%, 0.05);
+}
+#summary #memory {
+  color: hsl(39deg, 100%, 56%);
+  background-color: hsla(39deg, 100%, 56%, 0.05);
+}
+#summary #verbal {
+  color: hsl(166deg, 100%, 37%);
+  background-color: hsla(166deg, 100%, 37%, 0.05);
+}
+#summary #visual {
+  color: hsl(234deg, 85%, 45%);
+  background-color: hsla(234deg, 85%, 45%, 0.05);
+}
+#summary .score {
+  color: hsla(224deg, 30%, 27%, 0.6);
+  text-align: right;
+  font-weight: 700;
+}
+#summary .score strong {
+  color: hsl(224deg, 30%, 27%);
+}
+
+.category {
+  width: 100%;
+  height: 3rem;
+  background-color: hsl(234deg, 85%, 45%);
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  padding: 1rem;
+}
+
+button {
+  width: 100%;
+  height: 3rem;
+  margin-top: 5px;
+  background-color: hsl(224deg, 30%, 27%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+}
+
+/*# sourceMappingURL=styles.css.map */

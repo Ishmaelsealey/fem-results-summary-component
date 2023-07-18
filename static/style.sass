@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap')
+
+$red: hsl(0, 100%, 67%)
+$orange: hsl(39, 100%, 56%)
+$green: hsl(166, 100%, 37%)
+$blue: hsl(234, 85%, 45%)
+$bg-gradient: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%))
+$circle-gradient: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0))
+$pale-blue: hsl(221, 100%, 96%)
+$lavender: hsl(241, 100%, 89%)
+$dark-gray-blue: hsl(224, 30%, 27%)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-size: 18px
+    font-weight: 500
+
+body
+    font-family: 'Hanken Grotesk', sans-serif
+    min-height: 100vh
+
+#purple
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-image: $bg-gradient
+    padding: 25px 40px 45px
+    border-radius: 0 0 2rem 2rem
+    margin-bottom: 1.5rem
+    .info
+        color: hsla(0, 0, 100, 0.5)
+        text-align: center
+
+#circle
+    background-image: $circle-gradient
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 150px
+    height: 150px
+    border-radius: 50%
+    color: white
+    margin-bottom: 1.5rem
+    p
+        color: hsla(0, 0, 100, 0.4)
+
+h1
+    font-weight: 800
+    font-size: 3rem
+
+h2, h3, strong, button
+    font-weight: 700
+
+.result
+    color: hsla(0, 0, 100, 0.6)
+    margin-bottom: 20px
+
+.great
+    margin-bottom: 10px
+    color: white
+    font-size: 1.5rem
+
+#summary
+    padding: 0 30px 30px
+    h3
+        margin-bottom: 5px
+        color: $dark-gray-blue
+    #reaction
+        color: $red
+        background-color: hsla(0, 100%, 67%, 0.05)
+    #memory
+        color: $orange
+        background-color: hsla(39, 100%, 56%, 0.05)
+    #verbal
+        color: $green
+        background-color: hsla(166, 100%, 37%, 0.05)
+    #visual
+        color: $blue
+        background-color: hsla(234, 85%, 45%, 0.05)
+    .score
+        color: hsla(224, 30%, 27%, 0.6)
+        text-align: right
+        font-weight: 700
+        strong
+            color: $dark-gray-blue
+
+.category
+    width: 100%
+    height: 3rem
+    background-color: $blue
+    margin: 1rem 0
+    border-radius: 0.5rem
+    display: grid
+    grid-template-columns: 1fr 5fr 2fr
+    padding: 1rem
+
+button
+    width: 100%
+    height: 3rem
+    margin-top: 5px
+    background-color: $dark-gray-blue
+    color: white
+    border: none
+    border-radius: 50px
+
+button:hover
+    cursor: pointer
+    background-image: $bg-gradient
