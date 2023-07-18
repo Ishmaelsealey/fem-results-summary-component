@@ -97,6 +97,10 @@ h2, h3, strong, button
     display: grid
     grid-template-columns: 1fr 5fr 2fr
     padding: 1rem
+    .center
+        display: flex
+        align-items: center
+        height: 100%
 
 button
     width: 100%
@@ -110,3 +114,48 @@ button
 button:hover
     cursor: pointer
     background-image: $bg-gradient
+
+@media screen and (min-width: 768px)
+    body
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .desktop-position
+        display: grid
+        grid-template-columns: 1fr 1fr
+        width: 55vw
+        height: 75vh
+        border-radius: 2rem
+        box-shadow: 0 1rem 1rem hsla(224, 30%, 27%, 0.1)
+        overflow: hidden
+
+    #purple
+        height: 100%
+        border-radius: 2rem
+        margin: 0
+        padding: 30px 70px 40px
+        .result
+            font-size: 1.3rem
+            margin-bottom: 2rem
+        h1
+            font-size: 4rem
+        .great
+            font-size: 2rem
+            margin-bottom: 1rem
+
+    #circle
+        width: 200px
+        height: 200px
+    
+    #summary
+        padding: 40px
+        h3
+            font-size: 1.5rem
+            margin: 0 0 20px
+
+    .category
+        height: 3.5rem
+
+    button
+        margin-top: 1rem
