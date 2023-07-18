@@ -2,6 +2,7 @@
 
 Estimated time to complete: 4 hours, 30 mins
 Due to me using vim while coding this project, I will take a bit longer to get used to vim.
+I took 2 hours 48 minutes with no revisions. Which will be 3 hours 30 minutes with revisions and improvements.
 
 Use a general class for the different sections to have identical styling.
 Mobile first design.
