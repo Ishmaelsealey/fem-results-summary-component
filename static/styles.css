@@ -103,12 +103,8 @@ h2, h3, strong, button {
   border-radius: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 5fr 2fr;
-  padding: 1rem;
-}
-.category .center {
-  display: flex;
   align-items: center;
-  height: 100%;
+  padding: 1rem;
 }
 
 button {
