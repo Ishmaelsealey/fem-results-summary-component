@@ -64,10 +64,14 @@ h2, h3, strong, button {
 }
 
 #summary {
+  display: grid;
+  grid-template-rows: 2rem repeat(5, 3rem);
+  grid-gap: 1rem;
+  align-content: space-around;
   padding: 0 30px 30px;
 }
 #summary h3 {
-  margin-bottom: 5px;
+  margin-bottom: 0;
   color: hsl(224deg, 30%, 27%);
 }
 #summary #reaction {
@@ -97,9 +101,7 @@ h2, h3, strong, button {
 
 .category {
   width: 100%;
-  height: 3rem;
   background-color: hsl(234deg, 85%, 45%);
-  margin: 1rem 0;
   border-radius: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 5fr 2fr;
@@ -110,7 +112,6 @@ h2, h3, strong, button {
 button {
   width: 100%;
   height: 3rem;
-  margin-top: 5px;
   background-color: hsl(224deg, 30%, 27%);
   color: white;
   border: none;
@@ -163,13 +164,9 @@ button:hover {
   }
   #summary h3 {
     font-size: 1.5rem;
-    margin: 0 0 20px;
   }
   .category {
     height: 3.5rem;
-  }
-  button {
-    margin-top: 1rem;
   }
 }
 
