@@ -1,4 +1,4 @@
-const summarySection = document.querySelector("#summary");
+const SUMMARY = document.querySelector("#summary");
 
 
 
@@ -10,10 +10,10 @@ function func() {
 	.then((data) => {
 		console.log(data)
 
-		const header = document.querySelector("h1");
-		const total = data["0"].score + data["1"].score + data["2"].score + data["3"].score
-		const average = total / 4
-		header.innerHTML = Math.round(average)
+		const HEADER = document.querySelector("h1");
+		const TOTAL = data["0"].score + data["1"].score + data["2"].score + data["3"].score
+		const AVG = TOTAL / 4
+		HEADER.innerHTML = Math.round(AVG)
 		
 		for (let count = 0; count < 4; count++) {
 
@@ -55,13 +55,13 @@ function func() {
 			parentDiv.appendChild(image)
 			parentDiv.appendChild(strong)
 			parentDiv.appendChild(scoreDiv)
-			summarySection.appendChild(parentDiv);
+			SUMMARY.appendChild(parentDiv);
 
 		}
 
-		const button = document.createElement("button");
-		button.innerHTML = "Continue"
-		summarySection.appendChild(button);
+		const BUTTON = document.createElement("BUTTON");
+		BUTTON.innerHTML = "Continue"
+		SUMMARY.appendChild(BUTTON);
 	})
 }
 
